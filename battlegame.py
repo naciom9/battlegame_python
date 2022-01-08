@@ -38,3 +38,16 @@ while True:
 print(character)
 print(my_hp)
 print(my_damage)
+
+while True:
+    dragon_hp = dragon_hp - dragon_damage
+    print("The", character, "damage the Dragon")
+    print("The current hintpoints are", dragon_hp)
+    if dragon_hp <= 0:
+        print("The Dragon has lost the battle")
+        break
+    my_hp = my_hp - dragon_damage
+    print("The", character, "has been damsged by the Dragon")
+    print("The current hintpoints are", my_hp)
+    if my_hp <= 0:
+        print("Sorry", character, "lost the battle")
